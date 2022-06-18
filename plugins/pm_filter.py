@@ -29,7 +29,7 @@ logger.setLevel(logging.ERROR)
 BUTTONS = {}
 SPELL_CHECK = {}
 
-NORGE_IMG = f"https://telegra.ph/file/4f836a500ca6f17e9bcf2.jpg"
+NORGE_IMG = f"https://telegra.ph/file/2615a0dae4e6f7b4f3b97.jpg"
 
 @Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client, message):
