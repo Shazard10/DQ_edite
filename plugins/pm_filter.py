@@ -104,7 +104,7 @@ async def next_page(bot, query):
              InlineKeyboardButton(f"{round(int(offset)/10)+1} - {round(total/10)}🔖", callback_data="pages")]
         )
         btn.append(
-            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Ramananshav3_bot?")]
+            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/mc_club_bot?")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="neosub")]
@@ -113,7 +113,7 @@ async def next_page(bot, query):
         btn.append([InlineKeyboardButton("🗒ᴘᴀɢᴇ", callback_data="pages"),
                     InlineKeyboardButton(f"{round(int(offset)/10)+1} - {round(total/10)}🔖", callback_data="pages"),
                     InlineKeyboardButton("ɴᴇxᴛ➡", callback_data=f"next_{req}_{key}_{n_offset}")])
-        btn.append([InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Ramananshav3_bot?")])
+        btn.append([InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/mc_club_bot?")])
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="neosub")]
         )             
@@ -126,7 +126,7 @@ async def next_page(bot, query):
             ],
         )
         btn.append(
-            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Ramananshav3_bot?")]
+            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/mc_club_bot?")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="neosub")]
@@ -720,7 +720,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="🚫ᴍᴏʀᴇ ᴘᴀɢᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ🚫", callback_data="pages")]
         )             
         btn.append(
-            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Ramananshav3_bot?")]
+            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/mc_club_bot?")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="neosub")]
