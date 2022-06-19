@@ -710,7 +710,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton("🗒ᴘᴀɢᴇ", callback_data="pages"),InlineKeyboardButton(text=f"1 - {round(int(total_results)/10)}🔖", callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ➡", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.append(
-            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Ramananshav3_bot?")]
+            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="neosub")]
@@ -720,7 +720,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="🚫ᴍᴏʀᴇ ᴘᴀɢᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ🚫", callback_data="pages")]
         )             
         btn.append(
-            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/mAuto_imdb_sha_bot?")]
+            [InlineKeyboardButton("☞𝙲𝙷𝙴𝙲𝙺 𝙿𝙼",url="https://t.me/Auto_imdb_sha_bot?")]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"🎭 {search} 🎭",callback_data="neosub")]
