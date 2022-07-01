@@ -372,12 +372,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
-        buttons = [
-                    [
-                        InlineKeyboardButton('🎭 𝐆𝐫𝐨𝐮𝐩 🎭', url='https://t.me/new_movies_group_2021"),
-                        InlineKeyboardButton(' sʜᴀʀᴇ 💝', url="https://t.me/share/url?url=https://t.me/share/url?url=😱%20𝐌𝐨𝐯𝐢𝐞𝐬%20𝐂𝐥𝐮𝐛.²·⁰%20😱%0A%0Aഏത്%20അർധരാത്രി%20ചോദിച്ചാലും%20പടം%20കിട്ടും,%20ലോകത്തിലെ%20ഒട്ടുമിക്ക%20ഭാഷകളിലുമുള്ള%20സിനിമകളുടെ%20കളക്ഷൻ..%20❤️%0A%0A👇%20GROUP%20LINK%20👇%0A@new_movies_group_2021%0A@new_movies_group_2021%0A@new_movies_group_2021")
-                    ]
-                    ]
+        buttons = [[
+            InlineKeyboardButton('🎭 𝐆𝐫𝐨𝐮𝐩 🎭', url='https://t.me/new_movies_group_2021')
+         ]]
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
@@ -422,12 +419,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption = f_caption
         if f_caption is None:
             f_caption = f"{title}"
-        buttons = [
-                    [
-                        InlineKeyboardButton('🎭 𝐆𝐫𝐨𝐮𝐩 🎭', url='https://t.me/new_movies_group_2021"),
-                        InlineKeyboardButton(' sʜᴀʀᴇ 💝', url="https://t.me/share/url?url=https://t.me/share/url?url=😱%20𝐌𝐨𝐯𝐢𝐞𝐬%20𝐂𝐥𝐮𝐛.²·⁰%20😱%0A%0Aഏത്%20അർധരാത്രി%20ചോദിച്ചാലും%20പടം%20കിട്ടും,%20ലോകത്തിലെ%20ഒട്ടുമിക്ക%20ഭാഷകളിലുമുള്ള%20സിനിമകളുടെ%20കളക്ഷൻ..%20❤️%0A%0A👇%20GROUP%20LINK%20👇%0A@new_movies_group_2021%0A@new_movies_group_2021%0A@new_movies_group_2021")
-                    ]
-                    ]
+        buttons = [[
+            InlineKeyboardButton('🎭 𝐆𝐫𝐨𝐮𝐩 🎭', url='https://t.me/new_movies_group_2021')
+         ]]
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
