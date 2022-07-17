@@ -762,7 +762,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>Film : {search}\nYear : N/A\nLanguage : N/A\n\n©Team [@𝐌𝐨𝐯𝐢𝐞𝐬 𝐂𝐥𝐮𝐛🎥](https://t.me/new_movies_group_2021)</b>"
+        cap = f"<b>Film : {search}\nYear : N/A\nLanguage : N/A\n\n©Team 𝐌𝐨𝐯𝐢𝐞𝐬 𝐂𝐥𝐮𝐛🎥</b>"
     if imdb and imdb.get('poster'):
         try:
             sree = await message.reply_text(text=cap[:1024],
