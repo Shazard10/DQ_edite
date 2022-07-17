@@ -762,22 +762,22 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"📽️𝗠𝗼𝘃𝗶𝗲 𝗡𝗮𝗺𝗲 : <b>{search}</b>\n\n🗣️𝙍𝙚𝙦𝙪𝙚𝙨𝙩𝙚𝙙 𝘽𝙮 {message.from_user.mention}\n\n<i><u>ചോദിച്ച മൂവി ഫയൽ കാണുന്നില്ല എങ്കിൽ അടുത്ത പേജിൽ നോക്കുക. 🏃</u></i>"
+        cap = f"<b>Film : {search}\nYear : N/A\nLanguage : N/A\n\n©Team [@𝐌𝐨𝐯𝐢𝐞𝐬 𝐂𝐥𝐮𝐛🎥](https://t.me/new_movies_group_2021)</b>"
     if imdb and imdb.get('poster'):
         try:
-            await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
+            sree = await message.reply_text(text=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
+            sree = await message.reply_text(text=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             logger.exception(e)
-            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            sree = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
-        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        sree = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
-        await msg.message.delete()
+        sree = await msg.message.delete()
 
 async def advantage_spell_chok(msg):
     query = re.sub(
