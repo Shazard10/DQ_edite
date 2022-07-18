@@ -779,7 +779,7 @@ async def auto_filter(client, msg, spoll=False):
     if spoll:
         await msg.message.delete() 
   
-    await asyncio.sleep(1800)
+    await asyncio.sleep(600)
     await fmsg.delete()
 
 async def advantage_spell_chok(msg):
@@ -838,7 +838,7 @@ async def advantage_spell_chok(msg):
 
     k=await msg.reply("<b>✯ നിങ്ങൾ ഉദ്ദേശിച്ച മൂവി താഴെ കാണുന്ന വല്ലതും ആണ് എങ്കിൽ.അതിൽ ക്ലിക്ക് ചെയ്യുക</b>\n\n<b>✯ ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ?\n\n📯 ɴʙ:ᴄʟɪᴄᴋ ᴛʜᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ᴏɴʟʏ ᴅᴏɴᴛ ᴜꜱᴇ ʏᴇᴀʀ ʙᴜᴛᴛᴏɴ </b>",
                       reply_markup=InlineKeyboardMarkup(btn))
-    await asyncio.sleep(60)
+    await asyncio.sleep(600)
     await k.delete()
     await msg.delete()
 
