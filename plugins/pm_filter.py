@@ -373,7 +373,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [[
-            InlineKeyboardButton('🎭 𝐆𝐫𝐨𝐮𝐩 🎭', url='https://t.me/new_movies_group_2021')
+            InlineKeyboardButton('🎭 𝗠𝗢𝗩𝗜𝗘𝗦 𝗚𝗥𝗢𝗨𝗣 🎭', url='https://t.me/new_movies_group_2021')
          ]]
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -390,7 +390,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(buttons),
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('★彡Hey Bro 彡★\n\nമൂവിയുടെ ഫയൽ ‍‍ഞാന്‍ pm ഇൽ ഇട്ടിട്ടുണ്ട് പോയി നോക്ക്..🏃\n\nI have put the file of the movie as a pm. Go And See', show_alert=True)
+                await query.answer('★彡Hey {query.from_user.first_name} 彡★\n\n✯ മൂവിയുടെ ഫയൽ ‍‍ഞാന്‍ pm ഇൽ ഇട്ടിട്ടുണ്ട് പോയി നോക്ക്..🏃\n\n✯ 𝖨 𝗁𝖺𝗏𝖾 𝗉𝗎𝗍 𝗍𝗁𝖾 𝖿𝗂𝗅𝖾 𝗈𝖿 𝗍𝗁𝖾 𝗆𝗈𝗏𝗂𝖾 𝖺𝗌 𝖺 𝗉𝗆. 𝖦𝗈 𝖠𝗇𝖽 𝖲𝖾𝖾', show_alert=True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
@@ -399,7 +399,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer(f"Hey {query.from_user.first_name} നീ എൻ്റെ ചാനലിൽ ജോയിൻ ആയിട്ടില്ല..😒", show_alert=True)
+            await query.answer(f"Hey {query.from_user.first_name} I Like Your Smartness, But Don't Be Oversmart 😒ഒന്ന് ജോയിൻ ചെയ്യടാ ഉവ്വേ.. ഞങ്ങളും ജീവിച്ചു പൊക്കോട്ടെ😒", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -420,7 +420,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         buttons = [[
-            InlineKeyboardButton('🎭 𝐆𝐫𝐨𝐮𝐩 🎭', url='https://t.me/new_movies_group_2021')
+            InlineKeyboardButton('🎭 𝗠𝗢𝗩𝗜𝗘𝗦 𝗚𝗥𝗢𝗨𝗣 🎭', url='https://t.me/new_movies_group_2021')
          ]]
         await query.answer()
         await client.send_cached_media(
@@ -479,7 +479,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(f"𝙷𝙴𝙻𝙻𝙾👋...{query.from_user.first_name}🙌\n\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ʟᴏᴋɪ S01E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)", show_alert=True)   
 
     elif query.data == "neosub": 
-        await query.answer(f"彡Hey {query.from_user.first_name} Bro ചോദിച്ച മൂവി ഞാൻ താഴെ ആണ് കൊടുത്തിട്ടുള്ളത് അതുകൊണ്ട് അവിടെ പോയി വേണ്ടതിൽ ക്ലിക്ക് ചെയ്യൂ...😁\n\nThe movie you asked for is the one I gave below so go there and click on the desired ...🙂",show_alert=True)
+        await query.answer(f"彡Hey {query.from_user.first_name} Bro...\n\n നിങ്ങൾ ചോദിച്ച മൂവിയുടെ ഫയലുകൾ ഞാൻ താഴെ ആണ് കൊടുത്തിട്ടുള്ളത് അതുകൊണ്ട് അവിടെ പോയി വേണ്ടതിൽ ക്ലിക്ക് ചെയ്യൂ...😁\n\n 𝖨 𝗁𝖺𝗏𝖾 𝗀𝗂𝗏𝖾𝗇 𝗍𝗁𝖾 𝗆𝗈𝗏𝗂𝖾 𝗒𝗈𝗎 𝖺𝗌𝗄𝖾𝖽 𝖿𝗈𝗋 𝖻𝖾𝗅𝗈𝗐 𝗌𝗈 𝗀𝗈 𝗍𝗁𝖾𝗋𝖾 𝖺𝗇𝖽 𝖼𝗅𝗂𝖼𝗄 𝗈𝗇 𝗐𝗁𝖺𝗍 𝗒𝗈𝗎 𝗐𝖺𝗇𝗍🙂",show_alert=True)
 
     elif query.data == "reqst11":
         await query.answer(f"彡Hey {query.from_user.first_name} Bro ഫയൽസ് ലിങ്ക് ബട്ടനിൽ മാത്രം ക്ലിക്ക് ചെയ്യൂ 😒 \n\n Just Try It 😂",show_alert=True)        
