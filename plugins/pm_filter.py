@@ -807,7 +807,7 @@ async def advantage_spell_chok(msg):
             InlineKeyboardButton("🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data="malspell")
         ]]        
         k=await msg.reply_photo(photo="https://telegra.ph/file/4bb1968bd091453b0070c.jpg", caption=script.SPELL_CHECK_ENG, reply_markup=InlineKeyboardMarkup(btn))    
-        await asyncio.sleep(40)
+        await asyncio.sleep(3)
         await k.delete()
         await msg.delete()
         return
@@ -836,8 +836,16 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("നിങ്ങൾ ചോദിച്ചത് മനസ്സിലായിട്ടില്ല. സ്പെല്ലിംഗ് ഒന്ന് ചെക്ക് ചെയ്തു നോക്കുക🏃‍")
-        await asyncio.sleep(8)
+        button = InlineKeyboardMarkup(
+        [[
+           InlineKeyboardButton("✅ Google ✅", url=f"https://www.google.com/search?q={search}")
+        ],
+        [
+           InlineKeyboardButton("⭕️ IMDb", url=f"https://www.imdb.com/find?q={search}"),
+           InlineKeyboardButton("Wikipedia ⭕️", url=f"https://en.m.wikipedia.org/w/index.php?search={search}")
+        ]])
+        k = await msg.reply(f"✯ Hey, Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=button)
+        await asyncio.sleep(25)
         await k.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
